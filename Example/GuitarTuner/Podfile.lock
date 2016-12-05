@@ -1,8 +1,8 @@
 PODS:
-  - Beethoven (3.0.0):
+  - Beethoven (3.0.1):
     - Pitchy
   - Cartography (1.0.1)
-  - Hue (2.0.0)
+  - Hue (2.0.1)
   - Pitchy (2.0.1)
 
 DEPENDENCIES:
@@ -18,15 +18,15 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Hue:
-    :commit: 9588169ba4201e8a1038a3d2c1750843bf90d7e0
+    :commit: f82ffc7dd55d093d3acc6ce5b3d36ca259091fdd
     :git: https://github.com/hyperoslo/Hue
 
 SPEC CHECKSUMS:
-  Beethoven: 70d27286285b8d2a80c253b3da7db9b0d1157425
+  Beethoven: 386e31a0d92ae2e521dfe20a319fb10bc37781e3
   Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
-  Hue: 2b317616a04cc5d7cccdb024c88e6d143e2b9cf1
+  Hue: ab7efb15270e0bc764f2f468aa6f3f2728d52f2b
   Pitchy: 00dbe7cb7ac87fd9c32cb2aa6ce50d11f931289f
 
 PODFILE CHECKSUM: 1e153b4e2c75610a8ffdfdf508f1f60b13da109d
 
-COCOAPODS: 1.1.0.rc.3
+COCOAPODS: 1.0.0

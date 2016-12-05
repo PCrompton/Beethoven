@@ -120,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D57D410F1BE95A350026B005 /* Build configuration list for PBXNativeTarget "GuitarTuner" */;
 			buildPhases = (
+				F78ECE65FCBFC097EF4AA4C2 /* 📦 Check Pods Manifest.lock */,
 				0E47FCD898C9F86D6AB5429F /* [CP] Check Pods Manifest.lock */,
 				1962EBAD1F8E34314E982594 /* [CP] Check Pods Manifest.lock */,
 				D57D40F91BE95A350026B005 /* Sources */,
@@ -150,7 +151,7 @@
 				TargetAttributes = {
 					D57D40FC1BE95A350026B005 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 6YMA3EN78R;
+						DevelopmentTeam = F7XWAC4QF7;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -276,6 +277,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTuner/Pods-GuitarTuner-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F78ECE65FCBFC097EF4AA4C2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -396,7 +412,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6YMA3EN78R;
+				DEVELOPMENT_TEAM = F7XWAC4QF7;
 				INFOPLIST_FILE = "$(SRCROOT)/GuitarTuner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vadymmarkov.GuitarTuner;
@@ -411,7 +427,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6YMA3EN78R;
+				DEVELOPMENT_TEAM = F7XWAC4QF7;
 				INFOPLIST_FILE = "$(SRCROOT)/GuitarTuner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vadymmarkov.GuitarTuner;
